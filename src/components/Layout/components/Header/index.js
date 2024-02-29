@@ -7,6 +7,7 @@ import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -81,7 +82,10 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('action')}>action</div>
+                <div className={cx('action')}>
+                    <Button text>Upload</Button>
+                    <Button primary>Log In</Button>
+                </div>
             </div>
         </header>
     );
